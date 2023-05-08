@@ -1,2 +1,4 @@
-def welcome():
-    print("Hej, witaj w Terraform workflow!")
+#!/usr/bin/env python
+
+def greet():
+    print("Hello, world!")

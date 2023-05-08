@@ -1,9 +1,9 @@
-variable "file_path" {
+variable "filename" {
   type    = string
-  default = "welcome.txt"
+  default = "welcome.py"
 }
 
 variable "content" {
   type    = string
-  default = "${file("${path.module}/welcome.py")}"
+  default = "#!/usr/bin/env python\n\ndef greet():\n    print(\"Hello, world!\")\n"
 }

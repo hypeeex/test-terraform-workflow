@@ -1,3 +1,7 @@
-output "welcome_file" {
-  value = local_file.welcome_file.filename
+output "filename" {
+  value = local_file.welcome.filename
+}
+
+output "content" {
+  value = local_file.welcome.content
 }
